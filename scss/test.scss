@@ -15,6 +15,21 @@
     top:50%;
     transform:translatey(15%);
 }
+   
+}
+.content-container{
 
+    max-width:2200px;
+    width:100%;
+    height:400px;
+    border:solid;
+    text-align:center;
+    background-color:blue;
+
+    .texto{
+        font-size:55px;
+        padding-top:100px;
+        color:white;
+    }
 }
 
