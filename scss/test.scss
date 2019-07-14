@@ -1,9 +1,11 @@
 
 .hero-image{
+    max-width:2200px;
+    width:100%;
     height:1000px;
     background-image:url("../images/red-ink-background.jpeg");
-
 }
+
 .hero-text{
     text-align:center;
 .paralelo{
@@ -17,19 +19,39 @@
 }
    
 }
-.content-container{
 
+.content-container{
     max-width:2200px;
     width:100%;
     height:400px;
-    border:solid;
+    //border:solid;
     text-align:center;
-    background-color:blue;
+    background-image:url("../images/hboshows.jpg");
+    background-repeat:no-repeat;
+    background-size:cover;
+    background-position:center;
+    opacity: 0,0,0,0.5;
 
-    .texto{
+
+    .text{
         font-size:55px;
         padding-top:100px;
         color:white;
+        font-family:'pridi';
+    }
+
+    .sub-text{
+        display:flex;
+        text-align:center;
+        padding-left:35%;
+        p{
+            //border:solid;
+            padding-top:100px;
+            padding-right:100px;
+            font-size:34px;
+            color:red;
+            font-family:'pridi';
+        } 
     }
 }
 
