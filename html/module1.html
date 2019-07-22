@@ -1,0 +1,112 @@
+<!doctype html>
+<html class="no-js" lang="">
+
+<head>
+  <meta charset="utf-8">
+  <title></title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  
+  <link rel="apple-touch-icon" href="icon.png">
+  <!-- Place favicon.ico in the root directory -->
+
+  
+  <link rel="stylesheet" href="../css/main.css">
+
+  <meta name="theme-color" content="#fafafa">
+</head>
+
+<body>
+  <!--[if IE]>
+    <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
+  <![endif]-->
+
+  <!-- Add your site or application content here -->
+ <section class="card-section">
+  <div class="row">
+  <div class="col-sm-4">
+    <h3>hello</h3>
+    <div class="info-consumo">
+        <p>Ainda tens de dados moveis: </p>
+        <p><span>2G</span></p>
+    </div> 
+    <div class="bar">
+        <div class="progress" placeholder="10%"></div>
+      </div>
+    </div>
+  </div>
+
+      <div class="row">
+      <div class="col-sm-4">
+        <h3>hello</h3>  
+        <div class="info-consumo">
+            <p>Ainda tens de dados moveis: </p>
+            <p><span>2G</span></p>
+        </div> 
+        <div class="bar">
+            <div class="progress"></div>
+          </div>
+        </div>
+      </div>
+          <div class="row">
+          <div class="col-sm-4">
+            <h3>hello</h3>
+            <div class="info-consumo">
+                <p>Ainda tens de dados moveis: </p>
+                <p><span>2G</span></p>
+            </div> 
+            <div class="bar">
+                <div class="progress"></div>
+              </div>
+            </div>
+          </div>
+              <div class="row">
+              <div class="col-sm-4">
+                <h3>hello</h3>
+                <div class="info-consumo">
+                    <p>Ainda tens de dados moveis: </p>
+                    <p><span>2G</span></p>
+                </div> 
+                <div class="bar">
+                    <div class="progress"></div>
+                  </div>
+            </div> 
+          </div>          
+ </section>
+ 
+<div class="input-container">
+  <input class="input" type="number" ></input>
+  <button id="assign" onclick="move()">click</button>
+</div>
+
+
+<script>
+function move() {
+  var elem = document.getElementsById("assign"); 
+  var width = 1;
+  var id = setInterval(frame, 10);
+  function frame() {
+    if (width >= 100) {
+      clearInterval(id);
+    } else {
+      width++; 
+      elem.style.width = width + '%'; 
+    }
+  }
+}
+</script>
+  
+  <script src="../js/vendors/jQuery 3.4.1.js"></script>
+  <script src="js/plugins.js"></script>
+  <script src="../js/jquery/main.js"></script>
+
+  <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
+  <script>
+    window.ga = function () { ga.q.push(arguments) }; ga.q = []; ga.l = +new Date;
+    ga('create', 'UA-XXXXX-Y', 'auto'); ga('set','transport','beacon'); ga('send', 'pageview')
+  </script>
+  <script src="https://www.google-analytics.com/analytics.js" async></script>
+</body>
+
+</html>
