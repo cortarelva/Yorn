@@ -6,18 +6,16 @@
     max-width: 1024px;
     width:100%;
     padding:0 10px 10px 10px;
-    
+    background:linear-gradient(to bottom, #3F51B5 10.04%, #D81B60 162.08%);
 .card{
-        //clip-path: polygon(50% 10%, 58% 0, 100% 0, 100% 29%, 100% 100%, 0 100%, 0 0, 42% 0);
+        clip-path: polygon(50% 10%, 58% 0, 100% 0, 100% 29%, 100% 100%, 0 100%, 0 0, 42% 0);
         border:1px solid white;
         width:100%;
         height: 296px;
-        background:silver;
+        background: whitesmoke;
         text-align:center;
-        border-radius:10px;  
-        // manter a margem de 35px minimo por causa do quadrado do notch
-        margin:35px auto;
-        //overflow:hidden;  
+        //border-radius:10px;  
+        margin:35px auto; 
             .title{
                 //border:1px solid black;
                 width:119px;
@@ -26,28 +24,17 @@
                 font-size: 16px;
                 font-weight: bold;
                 line-height: 19px;
-                color: white;
+                color: black;
             }
             .circle{
-            position:absolute;
-            //border:1px solid black;
-            width:50px;
-            height:50px;
-            margin-left:20px;
-            border-radius:50px;
-            background:greenyellow;
-            }
-            
-        
-        .square{
-            //border:1px solid black;
-            width:40px;
-            height:40px;
-            background: white; 
-            transform:rotate(45deg);
-            margin:-25px auto;
-            z-index:2;
-        } 
+                position:absolute;
+                //border:1px solid black;
+                width:50px;
+                height:50px;
+                margin-left:20px;
+                border-radius:50px;
+                background:greenyellow;
+        }
     }   
 }
 
@@ -62,13 +49,24 @@
 }
 
 /* Portrait tablet to landscape and desktop */
-@media (min-width: 768px) and (max-width: 979px) {
+@media (min-width: 768px) and (max-width: 1199px) {
+    .card-container{
 
+        .card{
+            clip-path: polygon(50% 10%, 53% 0, 100% 0, 100% 29%, 100% 100%, 0 100%, 0 0, 47% 0);
+        }
+    }
 }
 
 /* Large desktop */
 @media (min-width: 1200px) {
+.card-container{
+
+.card{
+    clip-path: polygon(50% 10%, 53% 0, 100% 0, 100% 29%, 100% 100%, 0 100%, 0 0, 47% 0);
+}
 .title{
     font-size:20px;
+}
 }
 }
