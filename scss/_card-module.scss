@@ -1,73 +1,164 @@
 .card-container{
-    background: white;
-    //height:400px;
-    margin:70px auto;
-    border:1px solid white;
-    max-width: 1024px;
-    width:100%;
-    padding:0 10px 10px 10px;
-    background:linear-gradient(to bottom, #3F51B5 10.04%, #D81B60 162.08%);
+    margin:100px 130px;
+   // border:1px solid white;
+    display:flex;
+    justify-content:center;
+   
+
 .card{
-        clip-path: polygon(50% 10%, 58% 0, 100% 0, 100% 29%, 100% 100%, 0 100%, 0 0, 42% 0);
-        border:1px solid white;
-        width:100%;
-        height: 296px;
+        clip-path: polygon(50% 7%, 59% 0, 100% 0, 100% 29%, 100% 100%, 0 100%, 0 0, 41% 0);
+        //border:1px solid white;
+        width:337px;
+        height: 396px;
         background: whitesmoke;
-        text-align:center;
-        //border-radius:10px;  
-        margin:35px auto; 
+        text-align:center; 
+        margin:55px auto; 
+        &:nth-of-type(2){
+            width:436px;
+            height: 520px; 
+            margin:10px auto;
+            .title{
+                font-size:47px;
+            }
+            .plafond-net{
+               font-size: 47px;
+            }
+            .plafond-net-info{
+                font-size:27px;
+            }
+            .ofertas-tarifario{
+                font-size:27px;
+            }
+            .ofertas-tarifario-free{
+                font-size:27px;
+            }
+            .tarifario-preco{
+                
+                .tarifario-preco-valor{
+                    font-size:32px;
+                }
+                .tarifario-modo-pagamento{
+                    font-size:24px;
+                }
+            }
+            .tarifario-disclaimer{
+                position:relative;
+                top:110px;
+                font-family:$copy-font;
+                font-size:18px;
+                font-weight: 200;
+                line-height:23px;
+            }
+            .info-tarifario{
+                font-size:25px;
+            }
+        }
+
             .title{
                 //border:1px solid black;
-                width:119px;
-                height:19px;
-                margin:40px auto;
-                font-size: 16px;
+                font-family:$copy-font;
+                position:relative;
+                top:50px;
+                font-size: 37px;
                 font-weight: bold;
-                line-height: 19px;
-                color: black;
+                color:#3f51b5;
+                
             }
-            .circle{
-                position:absolute;
-                //border:1px solid black;
-                width:50px;
-                height:50px;
-                margin-left:20px;
-                border-radius:50px;
-                background:greenyellow;
-        }
+            .plafond-net{
+                //border:1px solid;
+                position:relative;
+                top:60px;
+                font-family:$copy-font;
+                font-size:36px;
+                font-weight: 400;
+               
+            }
+            .plafond-net-info{
+               // border:1px solid;
+                position:relative;
+                top:60px;
+                font-family:$copy-font;
+                font-size:20px;
+                font-weight:500;
+               
+            }
+            .ofertas-tarifario{
+               // border:1px solid;
+                position:relative;
+                top:80px;
+                margin:10px auto;
+                font-family:$copy-font;
+                font-size:20px;
+                font-weight:800;
+                
+            }
+            .ofertas-tarifario-free{
+                //border:1px solid;
+                position:relative;
+                top:80px;
+                margin:10px auto;
+                font-family:$copy-font;
+                font-size:20px;
+                font-weight:200;
+                
+            }
+            .tarifario-preco{
+               // border:1px solid;
+                position:relative;
+                top:100px;
+                display:flex;
+                justify-content:center;
+                .tarifario-preco-valor{
+                    font-family:$copy-font;
+                    font-size:25px;
+                    font-weight:800;
+                   
+                }
+                .tarifario-modo-pagamento{
+                    position:relative;
+                    padding-top:6px;
+                    font-family:$copy-font;
+                    font-size:18px;
+                    font-weight:500;
+                   
+                }
+            }
+            .info-tarifario{
+                position:relative;
+                top:135px;
+                font-family:$copy-font;
+                font-size:20px;
+                font-weight:600;
+                color: #d81b60;
+                text-decoration: underline;
+                
+            }
+            
     }   
 }
 
+//iphone 5/5S
+@media (max-width: 374px){
+
+}
+
 /* Landscape phones and down */
-@media (max-width: 480px) {
+@media (min-width:375px) and (max-width: 480px) {
 
 }
 
 /* Landscape phone to portrait tablet */
-@media (max-width: 767px) {
+@media (min-width: 481px) and (max-width: 767px) {
 
 }
 
 /* Portrait tablet to landscape and desktop */
 @media (min-width: 768px) and (max-width: 1199px) {
-    .card-container{
-
-        .card{
-            clip-path: polygon(50% 10%, 53% 0, 100% 0, 100% 29%, 100% 100%, 0 100%, 0 0, 47% 0);
-        }
-    }
+   
 }
 
 /* Large desktop */
 @media (min-width: 1200px) {
-.card-container{
 
-.card{
-    clip-path: polygon(50% 10%, 53% 0, 100% 0, 100% 29%, 100% 100%, 0 100%, 0 0, 47% 0);
-}
-.title{
-    font-size:20px;
-}
-}
 }
 

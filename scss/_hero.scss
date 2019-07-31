@@ -1,10 +1,4 @@
 
-
-body{
-    //max-width:1440px;
-   // width:100%;
-    //margin:0 auto;
-
     .hero-image{
         background-image:url("../images/desktop/hero-image.jpg");
         //max-width:1440px;
@@ -19,6 +13,7 @@ body{
     .hero-text{
         top:50%;
         transform:translateY(-45%);
+        -webkit-transform:translateY(-45%);
         position:relative;
         margin-left:5%;
         z-index:2;
@@ -77,29 +72,28 @@ body{
         }
         
     }
-}
+
  .bottom-arrow-container{
-     background:white;
+        background:white;
         border:1px solid white;
-        width:22px;
-        height:22px;
+        width:18px;
+        height:18px;
         transform:rotate(45deg);
         position:absolute;
-        bottom:10px;
+        bottom:8px;
         text-align:center;
         margin-left:46%;
-    .bottom-arrow{
-        
+    .bottom-arrow{      
         border:1px solid white;
-        width:22px;
-        height:22px;
+        width:18px;
+        height:18px;
         position:absolute;
-        bottom:10px;
+        bottom:8px;
         margin-left:46%;
     }
  } 
 
-
+ 
 
 
 //media queries
