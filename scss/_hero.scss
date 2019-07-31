@@ -1,0 +1,282 @@
+
+
+body{
+    //max-width:1440px;
+   // width:100%;
+    //margin:0 auto;
+
+    .hero-image{
+        background-image:url("../images/desktop/hero-image.jpg");
+        //max-width:1440px;
+        //max-height:812px;
+        width: 100%;
+        height: 100%;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        //position: relative;
+
+    .hero-text{
+        top:50%;
+        transform:translateY(-45%);
+        position:relative;
+        margin-left:5%;
+        z-index:2;
+        text-align:left;
+        h1{
+            //border:1px solid;
+            font-family: $primary-font;
+            background-color:transparent;
+            color:white;
+            font-size:105px;
+            line-height: 116px;
+            letter-spacing: 3px;
+            text-transform:uppercase;
+        }
+        .font-color{
+            //verificar cor com alguem de ux
+            color:#d81b60;
+        }
+        .apple-subscribe{
+            //border:1px solid;
+           
+           p{
+               //border:1px solid;
+                margin:30px auto;
+                font-family: $copy-font;
+                font-style: normal;
+                font-weight: 400;
+                font-size: 35px;
+                line-height: 45px;
+                letter-spacing: 2px;
+                color:white;
+                strong{
+                    font-weight:800;
+                }
+            }
+            .apple-icon{
+                width:50px;
+                height:50px;
+                position:relative;
+                display:inline-block;
+                margin-left:20px;
+                top:11px;               
+            }
+        }
+        .apple-info{
+            font-family:$copy-font;
+            color:white;
+            display:inline-block;
+            border:3px solid;
+            background-color:transparent;
+            padding:18px 105px;
+            text-decoration:none;
+            font-size:25px;
+            font-weight: 800;
+            }
+        }
+        
+    }
+}
+ .bottom-arrow-container{
+     background:white;
+        border:1px solid white;
+        width:22px;
+        height:22px;
+        transform:rotate(45deg);
+        position:absolute;
+        bottom:10px;
+        text-align:center;
+        margin-left:46%;
+    .bottom-arrow{
+        
+        border:1px solid white;
+        width:22px;
+        height:22px;
+        position:absolute;
+        bottom:10px;
+        margin-left:46%;
+    }
+ } 
+
+
+
+
+//media queries
+/* Landscape phones and down */
+
+@media (max-width: 374px) {
+    body .hero-image{
+        background-image:url("../images/mobile/mobile_hero.jpg");
+        width:100%;
+        &:before{
+            content:'';
+            width:100%;
+            height:100%;
+            background-color:rgba(0,0,0,0.3);
+            display: block;
+            position: absolute;
+            left:0;
+            top:0;
+            z-index:1;
+          }
+        .hero-text{
+            top:30%;      
+            h1{
+                font-size:30px;
+                line-height: 40px;
+                letter-spacing: 3px;
+            }
+           .apple-subscribe{
+            p{
+                font-size:10px;
+            }
+            .apple-icon{
+                width:20px;
+                height:20px;
+                margin-left:10px;
+                top:8px;        
+            }
+        } 
+         .apple-info{
+            padding:10px 35px;
+            font-size:15px;
+         }  
+          
+        }
+    } 
+
+}
+
+
+@media (min-width:375px) and (max-width: 480px) {
+    body .hero-image{
+        background-image:url("../images/mobile/mobile_hero.jpg");
+        width:100%;
+        &:before{
+            content:'';
+            width:100%;
+            height:100%;
+            background-color:rgba(0,0,0,0.3);
+            display: block;
+            position: absolute;
+            left:0;
+            top:0;
+            z-index:1;
+          }
+        .hero-text{
+            top:25%;      
+            h1{
+                font-size:40px;
+                line-height: 50px;
+                letter-spacing: 3px;
+            }
+           .apple-subscribe{
+            p{
+                font-size:15px;
+            }
+            .apple-icon{
+                width:30px;
+                height:30px;
+            }
+        } 
+         .apple-info{
+            padding:10px 45px;
+            font-size:15px;
+         }  
+          
+        }
+    } 
+
+}
+
+/* Landscape phone to portrait tablet */
+@media (min-width: 481px) and (max-width: 767px) {
+    body .hero-image{
+        background-image:url("../images/mobile/mobile_hero.jpg");
+        width:100%;
+        &:before{
+            content:'';
+            width:100%;
+            height:100%;
+            background-color:rgba(0,0,0,0.3);
+            display: block;
+            position: absolute;
+            left:0;
+            top:0;
+            z-index:1;
+          }
+        .hero-text{
+            top:40%;          
+            h1{
+                font-size:45px;
+                line-height: 50px;
+                letter-spacing: 3px;
+            }
+           .apple-subscribe{
+            p{
+                font-size:15px;
+            }
+            .apple-icon{
+                width:30px;
+                height:30px;
+            }
+        } 
+         .apple-info{
+            padding:10px 45px;
+            font-size:15px;
+         }  
+          
+        }
+    } 
+}
+
+/* Portrait tablet to landscape and desktop */
+@media (min-width: 768px) and (max-width: 1199px) {
+    body .hero-image{
+        background-image:url("../images/mobile/mobile_hero.jpg");
+        width:100%;
+        &:before{
+            content:'';
+            width:100%;
+            height:100%;
+            background-color:rgba(0,0,0,0.3);
+            display: block;
+            position: absolute;
+            left:0;
+            top:0;
+            z-index:1;
+          }
+        .hero-text{
+            top:40%;          
+            h1{
+                font-size:60px;
+                line-height: 80px;
+                letter-spacing: 3px;
+            }
+           .apple-subscribe{
+            p{
+                font-size:20px;
+            }
+            .apple-icon{
+                width:35px;
+                height:35px;
+            }
+        } 
+         .apple-info{
+            padding:15px 55px;
+            font-size:20px;
+         }  
+          
+        }
+    } 
+}
+
+/* Large desktop */
+@media (min-width: 1200px) {
+    body .hero-image{
+        max-width:100%;
+       
+}
+
+}

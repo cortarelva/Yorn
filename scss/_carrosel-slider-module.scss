@@ -1,5 +1,6 @@
 
 
+
 .slider-container{
 margin-top:50px;
 text-align:center;
@@ -10,14 +11,16 @@ text-align:center;
   }
   
   #slider {
+   // border:1px solid;
     height: 150px;
     position: relative;
-    perspective: 5000px;
+    perspective: 6000px;
     transform-style: preserve-3d;
     
     .card {
+        clip-path: polygon(50% 7%, 58% 0, 100% 0, 100% 29%, 100% 100%, 0 100%, 0 0, 42% 0);
         margin:auto;
-        width: 230px;
+        width: 250px;
         height: 314px;
         border-radius: 4px;
         position: absolute;
@@ -38,25 +41,79 @@ text-align:center;
 
 }
 
-/* Landscape phones and down */
-@media (max-width: 480px) {
 
+/* Landscape phones and down */
+@media (max-width: 374px) {
+  .slider-container{
+  //border:1px solid;
+ // display: block;
+  margin-left: auto;
+  margin-right: auto;
+  max-width:374px;
+  width:100%;
+  
+  #slider{
+    .card{
+      clip-path: polygon(50% 7%, 58% 0, 100% 0, 100% 29%, 100% 100%, 0 100%, 0 0, 42% 0);
+      margin:30px auto;
+      width: 150px;
+      height: 214px;
+
+      .info-container{
+        border:1px solid;
+        width:126px;
+        height:114px;
+        margin:25px auto;
+     }
+    }
+  }
+  }
 }
 
 /* Landscape phone to portrait tablet */
 @media (max-width: 767px) {
+  .slider-container{
+    position:absolute;
+    left:27%;
+    #slider{
+      .card{
+        clip-path: polygon(50% 7%, 58% 0, 100% 0, 100% 29%, 100% 100%, 0 100%, 0 0, 42% 0);
+        margin:30px auto;
+        width: 150px;
+        height: 214px;
+  
+        .info-container{
+          border:1px solid;
+          width:126px;
+          height:114px;
+          margin:25px auto;
+       }
+      }
+    }
+    }
 
 }
 
 /* Portrait tablet to landscape and desktop */
-@media (min-width: 768px) and (max-width: 979px) {
-
+@media (min-width: 768px) and (max-width: 1199px) {
+    #slider{
+        .card{
+            clip-path: polygon(50% 10%, 53% 0, 100% 0, 100% 29%, 100% 100%, 0 100%, 0 0, 47% 0);
+        }
+    }
 }
 
 /* Large desktop */
 @media (min-width: 1200px) {
-label{
-    font-size:30px;
+#slider{
+
+  .card{
+      clip-path: polygon(50% 10%, 53% 0, 100% 0, 100% 29%, 100% 100%, 0 100%, 0 0, 47% 0);
+
+  }
+.title{
+    font-size:20px;
+}
 }
 }
 
