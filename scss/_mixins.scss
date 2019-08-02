@@ -30,3 +30,7 @@
     
 }
 
+@mixin general-font{
+    color:white;
+    font-family:$copy-font;
+}

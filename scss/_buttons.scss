@@ -1,0 +1,62 @@
+.btn-aderir-homepage{
+    width: 436px;
+    height: 69px;
+    margin: 0 auto;
+    padding:25px; 
+    background-color:#d81b60;
+    font-family:$copy-font;
+    font-size:24px;
+    color:white;
+    font-weight:600;
+    cursor:pointer;
+    //display:none;
+}
+
+
+
+
+
+//iphone 5/5S
+@media (max-width: 374px){
+    .btn-aderir-homepage{
+        width: 136px;
+        height: 49px;
+        font-size:18px;
+        padding:18px; 
+    }
+}
+
+/* Landscape phones and down */
+@media (min-width:375px) and (max-width: 480px) {
+    .btn-aderir-homepage{
+        width: 156px;
+        height: 49px;
+        font-size:18px;
+        padding:18px; 
+    }
+}
+
+/* Landscape phone to portrait tablet */
+@media (min-width: 481px) and (max-width: 767px) {
+    .btn-aderir-homepage{
+        width: 156px;
+        height: 49px;
+        font-size:18px;
+        padding:18px; 
+    }
+}
+
+/* Portrait tablet to landscape and desktop */
+@media (min-width: 768px) and (max-width: 1199px) {
+    .btn-aderir-homepage{
+        width: 200px;
+        height: 59px;
+        font-size:20px;
+        padding:21px; 
+    }
+}
+
+/* Large desktop */
+@media (min-width: 1200px) {
+
+}

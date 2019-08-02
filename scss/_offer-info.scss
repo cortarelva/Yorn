@@ -1,0 +1,74 @@
+.offer-info-header{
+@include general-font;
+font-size:36px;
+font-weight:600;
+position:relative;
+top:80px;
+}
+.offer-info-plafond-app{
+    @include general-font;
+    font-size:48px;
+    font-weight:600;
+    position:relative;
+    top:140px;
+}
+.offer-info-descriptive{
+    @include general-font;
+    font-size:30px;
+    position:relative;
+    top:160px;
+}
+.offer-icons-row-one{
+    //border:1px solid white;
+    width:756px;
+    height:70px;
+    position:relative;
+    top:200px;
+    margin:0 auto;
+    text-align:center;
+    
+
+    .offer-icons-one{
+        position:relative;
+        display:inline-block;
+        margin:0 27px;
+    }
+}
+.offer-icons-row-two{
+    //border:1px solid white;
+    width:756px;
+    height:70px;
+    position:relative;
+    top:200px;
+    margin:0 auto;
+    text-align:center;
+    .offer-icons-two{
+        position:relative;
+        display:inline-block;
+        margin:0 25px;
+    }
+}
+.horizontal-line{
+    border:0.5px solid whitesmoke;
+    width:344px;
+    height:1px;
+    position:relative;
+    margin:0 auto;
+    top:250px;
+    &:nth-of-type(2){
+        top:430px;
+    }
+}
+.offer-info-plafond-app-two{
+    @include general-font;
+    font-size:48px;
+    font-weight:600;
+    position:relative;
+    top:330px;
+}
+.offer-info-descriptive-two{
+    @include general-font;
+    font-size:30px;
+    position:relative;
+    top:350px;
+}
