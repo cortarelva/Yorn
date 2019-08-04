@@ -1,3 +1,5 @@
+body{
+    text-align:center;
 .offer-info-header{
 @include general-font;
 font-size:36px;
@@ -26,8 +28,6 @@ top:80px;
     top:200px;
     margin:0 auto;
     text-align:center;
-    
-
     .offer-icons-one{
         position:relative;
         display:inline-block;
@@ -50,14 +50,23 @@ top:80px;
 }
 .horizontal-line{
     border:0.5px solid whitesmoke;
+    opacity: 0.5;
+    filter: alpha(opacity=50); /* For IE8 and earlier */
     width:344px;
     height:1px;
     position:relative;
     margin:0 auto;
-    top:250px;
-    &:nth-of-type(2){
-        top:430px;
-    }
+    top:280px; 
+}
+.horizontal-line-two{
+    border:0.5px solid whitesmoke;
+    opacity: 0.5;
+    filter: alpha(opacity=50); /* For IE8 and earlier */
+    width:344px;
+    height:1px;
+    position:relative;
+    margin:0 auto;
+    top:460px; 
 }
 .offer-info-plafond-app-two{
     @include general-font;
@@ -71,4 +80,148 @@ top:80px;
     font-size:30px;
     position:relative;
     top:350px;
+}
+.offer-info-stream{
+    //border:1px solid white;
+    width:756px;
+    height:70px;
+    position:relative;
+    top:400px;
+    margin:0 auto;
+    text-align:center;
+    .offer-icon-stream{
+        position:relative;
+        display:inline-block;
+        margin:0 25px;
+    }
+}
+.offer-info-minutos{
+    @include general-font;
+    font-size:48px;
+    font-weight:600;
+    position:relative;
+    top:550px; 
+}
+.offer-info-plafond-minutos{
+    @include general-font;
+    font-size:30px;
+    position:relative;
+    top:600px;
+}
+
+
+    .offer-icons-mobile-row-one{
+        //border:1px solid white;
+        width:756px;
+        height:70px;
+        position:relative;
+        top:200px;
+        .offer-icons-mobile-one{
+            position:relative;
+            display:inline-block;
+            margin:0 20px;
+           
+        }
+    }
+    .offer-icons-mobile-row-two{
+        //border:1px solid white;
+        width:756px;
+        height:70px;
+        position:relative;
+        top:220px;
+        .offer-icons-mobile-two{
+            position:relative;
+            display:inline-block;
+            margin:0 20px;
+        }
+    }
+    .offer-icons-mobile-row-three{
+        //border:1px solid white;
+        width:756px;
+        height:70px;
+        position:relative;
+        top:230px;
+        .offer-icons-mobile-three{
+            position:relative;
+            display:inline-block;
+            margin:0 17px;
+        }
+    }
+
+
+}
+
+//media queries
+//iphone 5/5S
+@media (max-width: 374px){
+    .offer-icons-desktop-container{
+        display:none;
+     }
+     .offer-icons-desktop-container{
+        display:none;
+     }
+     .offer-icons-mobile-row-one{
+        text-align:left;
+        margin-left:0;
+    }
+    .offer-icons-mobile-row-two{
+        text-align:left;
+        margin-left:0;
+    }
+    .offer-icons-mobile-row-three{
+        text-align:left;
+        margin-left:45px;
+    }
+}
+
+/* Landscape phones and down */
+@media (min-width:375px) and (max-width: 480px) {
+    .offer-icons-desktop-container{
+        display:none;
+     }
+     .offer-icons-mobile-row-one{
+        text-align:left;
+        margin-left:10px;
+    }
+    .offer-icons-mobile-row-two{
+        text-align:left;
+        margin-left:10px;
+    }
+    .offer-icons-mobile-row-three{
+        text-align:left;
+        margin-left:65px;
+    }
+}
+
+/* Landscape phone to portrait tablet */
+@media (min-width: 481px) and (max-width: 767px) {
+    .offer-icons-desktop-container{
+       display:none;
+    }
+    .offer-icons-mobile-row-one{
+        text-align:left;
+        margin-left:20px;
+    }
+    .offer-icons-mobile-row-two{
+        text-align:left;
+        margin-left:15px;
+    }
+    .offer-icons-mobile-row-three{
+        text-align:left;
+        margin-left:115px;
+    }
+}
+
+/* Portrait tablet to landscape and desktop */
+@media (min-width: 768px) and (max-width: 1199px) {
+    .offer-icons-mobile-container{
+        display:none;
+    }
+}
+
+/* Large desktop */
+@media (min-width: 1200px) {
+    .offer-icons-mobile-container{
+        display:none;
+    }
 }

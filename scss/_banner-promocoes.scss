@@ -1,0 +1,420 @@
+.banner-hbo{
+    background-image:url('../images/desktop/desktop_hbo.jpg');
+    @include banner-image-large-desktop;
+
+    .banner-container{
+        //border:1px solid white;
+        width: 603px;
+        height: 233px;
+        position:relative;
+        top:95px;
+        left:5%;
+        text-align:left;
+        .banner-header{
+            @include general-font;
+            font-size:64px;
+            font-weight:600;
+        }
+        .banner-descriptive{
+            @include general-font;
+            font-size:28px;
+            position:relative;
+            top:40px;
+            line-height:45px;
+        }
+        .banner-label{
+            @include general-font;
+            font-size:18px;
+            font-weight:600;
+            text-decoration:underline;
+            position:relative;
+            top:100px;
+            cursor:pointer;
+        }
+    }   
+}
+.banner-apple{
+    background-image:url('../images/desktop/desktop_apple.jpg');
+    @include banner-image-large-desktop;
+    
+    .banner-container{
+        //border:1px solid white;
+        width: 603px;
+        height: 233px;
+        position:relative;
+        top:95px;
+        left:55%;
+        text-align:left;
+        .banner-header{
+            @include general-font;
+            font-size:64px;
+            font-weight:600;
+        }
+        .banner-descriptive{
+            @include general-font;
+            font-size:28px;
+            position:relative;
+            top:40px;
+            line-height:45px;
+        }
+        .banner-label{
+            @include general-font;
+            font-size:18px;
+            font-weight:600;
+            text-decoration:underline;
+            position:relative;
+            top:100px;
+            cursor:pointer;
+        }
+    }   
+}
+.banner-descontos{
+    background-image:url('../images/desktop/desktop_descontos.jpg');
+    @include banner-image-large-desktop;
+   
+    .banner-container{
+        //border:1px solid white;
+        width: 603px;
+        height: 233px;
+        position:relative;
+        top:95px;
+        left:5%;
+        text-align:left;
+        .banner-header{
+            @include general-font;
+            font-size:64px;
+            font-weight:600;
+        }
+        .banner-descriptive{
+            @include general-font;
+            font-size:28px;
+            position:relative;
+            top:40px;
+            line-height:45px;
+        }
+        .banner-label{
+            @include general-font;
+            font-size:18px;
+            font-weight:600;
+            text-decoration:underline;
+            position:relative;
+            top:100px;
+            cursor:pointer;
+        }
+    }   
+}
+.banner-rede{
+    background-image:url('../images/desktop/desktop_rede.jpg');
+    @include banner-image-large-desktop;
+   
+    .banner-container{
+        //border:1px solid white;
+        width: 603px;
+        height: 233px;
+        position:relative;
+        top:95px;
+        left:55%;
+        text-align:left;
+        .banner-header{
+            @include general-font;
+            font-size:64px;
+            font-weight:600;
+        }
+        .banner-descriptive{
+            @include general-font;
+            font-size:28px;
+            position:relative;
+            top:40px;
+            line-height:45px;
+        }
+        .banner-label{
+            @include general-font;
+            font-size:18px;
+            font-weight:600;
+            text-decoration:underline;
+            position:relative;
+            top:100px;
+            cursor:pointer;
+        }
+    }   
+}
+
+
+
+.banner-info-others{
+   background:#3F51B5;
+    width:100%;
+    height:300px;
+    position:relative;
+    text-align:center;
+    .banner-container{
+       //border:1px solid;
+        width:380px;
+        height:250px;
+        display:inline-block;
+        margin:50px 80px;
+        color:white;
+        font-family:$copy-font;
+        .banner-info-others-header{
+            font-size:30px;
+            font-weight:600;
+            letter-spacing: 2px;          
+        }
+        .banner-info-others-paragraf{
+            font-size:20px;
+            line-height: 30px;
+            margin-top:30px;
+         }  
+    }
+}
+
+
+
+
+
+//media queries
+//iphone 5/5S
+@media (max-width: 374px){
+    
+    .banner-hbo
+    .banner-container{
+      left:20px;
+        .banner-header{
+          font-size:44px;
+        }
+        .banner-descriptive{
+          font-size:13px;
+          line-height:25px
+        }
+        .banner-label{
+          font-size:18px;
+        }
+    }
+      .banner-apple
+    .banner-container{
+      left:20px;
+        .banner-header{
+          font-size:44px;
+        }
+        .banner-descriptive{
+          font-size:13px;
+          line-height:25px
+        }
+        .banner-label{
+          font-size:18px;
+        }
+    }
+    .banner-descontos
+    .banner-container{
+      left:20px;
+        .banner-header{
+          font-size:44px;
+        }
+        .banner-descriptive{
+          font-size:13px;
+          line-height:25px
+        }
+        .banner-label{
+          font-size:18px;
+        }
+    }
+    .banner-rede
+    .banner-container{
+      left:20px;
+        .banner-header{
+          font-size:30px;
+        }
+        .banner-descriptive{
+          font-size:13px;
+          line-height:25px
+        }
+        .banner-label{
+          font-size:18px;
+        }
+    } 
+    .banner-info-others{
+      height:700px;
+      .banner-container{
+        margin:50px 0;
+        .banner-info-others-header{
+          font-size:20px;
+        }
+        .banner-info-others-paragraf{
+          font-size:15px;
+        }
+      }
+    } 
+}
+
+/* Landscape phones and down */
+@media (min-width:375px) and (max-width: 480px) {
+    .banner-hbo
+  .banner-container{
+    left:50px;
+      .banner-header{
+        font-size:44px;
+      }
+      .banner-descriptive{
+        font-size:15px;
+      }
+      .banner-label{
+        font-size:18px;
+      }
+  }
+    .banner-apple
+  .banner-container{
+    left:50px;
+      .banner-header{
+        font-size:44px;
+      }
+      .banner-descriptive{
+        font-size:15px;
+      }
+      .banner-label{
+        font-size:18px;
+      }
+  }
+  .banner-descontos
+  .banner-container{
+    left:50px;
+      .banner-header{
+        font-size:44px;
+      }
+      .banner-descriptive{
+        font-size:15px;
+      }
+      .banner-label{
+        font-size:18px;
+      }
+  }
+  .banner-rede
+  .banner-container{
+    left:50px;
+      .banner-header{
+        font-size:30px;
+      }
+      .banner-descriptive{
+        font-size:15px;
+      }
+      .banner-label{
+        font-size:18px;
+      }
+  }  
+  .banner-info-others{
+    height:700px;
+    text-align:center;
+    padding:0 auto;
+    .banner-container{
+        width:380px;
+        height:250px;
+        display:inline-block;
+        margin:50px 0;
+        .banner-info-others-header{
+            font-size:25px;
+            .banner-info-others-paragraf{
+                font-size:10px;
+            }
+        }
+    }
+  }
+}
+
+/* Landscape phone to portrait tablet */
+@media (min-width: 481px) and (max-width: 767px) {
+    .banner-hbo
+  .banner-container{
+    left:50px;
+      .banner-header{
+        font-size:44px;
+      }
+      .banner-descriptive{
+        font-size:20px;
+      }
+      .banner-label{
+        font-size:18px;
+      }
+  }
+    .banner-apple
+  .banner-container{
+    left:50px;
+      .banner-header{
+        font-size:44px;
+      }
+      .banner-descriptive{
+        font-size:20px;
+      }
+      .banner-label{
+        font-size:18px;
+      }
+  }
+  .banner-descontos
+  .banner-container{
+    left:50px;
+      .banner-header{
+        font-size:44px;
+      }
+      .banner-descriptive{
+        font-size:20px;
+      }
+      .banner-label{
+        font-size:18px;
+      }
+  }
+  .banner-rede
+  .banner-container{
+    left:50px;
+      .banner-header{
+        font-size:44px;
+      }
+      .banner-descriptive{
+        font-size:20px;
+      }
+      .banner-label{
+        font-size:18px;
+      }
+  }  
+  .banner-info-others{
+    height:700px;
+    text-align:center;
+}
+}
+
+/* Portrait tablet to landscape and desktop */
+@media (min-width: 768px) and (max-width: 1199px) {
+.banner-apple
+  .banner-container{
+    left:5%;
+     /* .banner-header{
+        
+      }
+      .banner-descriptive{
+        
+      }
+      .banner-label{
+
+      }*/
+  }
+  .banner-rede
+  .banner-container{
+    left:5%;
+    /* .banner-header{
+        
+      }
+      .banner-descriptive{
+        
+      }
+      .banner-label{
+
+      }*/
+  } 
+  .banner-info-others{
+      height:700px;
+      
+    }
+}
+
+// Large desktop 
+/*
+@media (min-width: 1200px) {
+
+}*/
