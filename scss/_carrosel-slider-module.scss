@@ -4,7 +4,7 @@
   height:400px;
   margin:50px auto;
   background:transparent;
-  
+  overflow-x:none
 }
 
 .card-each{
@@ -73,13 +73,14 @@
 
 /* Landscape phones and down */
 @media (min-width:375px) and (max-width: 480px) {
-
+  
 }
 
 /* Landscape phone to portrait tablet */
 @media (min-width: 481px) and (max-width: 767px) {
   .slick-container{
     display:none;
+    overflow-x:none;
   }
 }
 
@@ -87,6 +88,7 @@
 @media (min-width: 768px) and (max-width: 1199px) {
   .slick-container{
     display:none;
+    overflow-x:none;
   }
 }
 
@@ -94,6 +96,7 @@
 @media (min-width: 1200px) {
   .slick-container{
     display:none;
+    overflow-x:none;
   }
 }
 
