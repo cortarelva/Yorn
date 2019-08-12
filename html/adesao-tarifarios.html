@@ -13,7 +13,10 @@
 
   
   <link rel="stylesheet" href="../css/main.css">
-  <!--<link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">-->
+  <!--
+  <link rel="stylesheet" href="../vendors/bootstrap/css/bootstrap.min.css" media="screen">
+  <link rel="stylesheet" href="../vendors/bootstrap/css/bootstrap-responsive.min.css" media= "screen">
+  -->
   <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
   <!--fonts stylesheets-->
   <link rel="stylesheet" href="../fonts/appopaint-regular.css">
@@ -26,12 +29,10 @@
 </head>
 
 <body>
-  <!--[if IE]>
-    <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
-  <![endif]-->
+ 
 
-  <!-- nav section -->
-
+  <!--nav section-->
+  
   <!--end nav section -->
 
   <!--background and header section -->
@@ -49,20 +50,37 @@
       </ul>
     </div>
   </section>
+  <section>
+      <ul class="bar-descriptive">
+          <li class="bar-item">Identificação</li>
+          <li class="bar-item">Morada</li>
+          <li class="bar-item">Número</li>
+          <li class="bar-item">Revisão</li>
+      </ul>
+  </section>
   <!-- end progress bar section -->
 
-  <!--card form section -->
+  <!--card section -->
   <section class="adesao-card-container">
     <div class="adesao-card">
-      <h3 class="adesao-title">Yorn XM 5 GB </h3>		
+      <h3 class="adesao-title">Yorn X L</h3>
+      <p class="adesao-plafond-net">10 GB</p>	
+      <p class="adesao-valor">3.99€/semana</p>	
+      <p class="adesao-promocao">2.75€ durante 3 meses</p>
+    <!--form section-->
+    <form>
+        <input class="form-input" type="text" placeholder="Nome e apelido" >
+    </form>
+    <form>
+        <input class="form-input" type="number" placeholder="NIF">
+    </form>
+    <!--end form section-->
+  <!-- end card section -->
+  <label class="tarifarios-back">outro tarifário</label>
     </div>
-  <!-- end card form section -->
-  
-
-
-</section>
+    </section>
 <!--end background and header section -->
-
+<button class="btn-aderir">'Bora!</button>
 
 
   
@@ -70,12 +88,12 @@
   <script src="../js/plugins.js"></script>
   <script src="../js/jquery/main.js"></script>
   <script src="../js/jquery/test.js"></script>
+  <!--<script src="../vendors/bootstrap/js/bootstrap.min.js"></script>-->
   <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
   <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
   
-<!--
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.bundle.min.js"></script>-->
+
+
 <script>
   window.ga = function () { ga.q.push(arguments) }; ga.q = []; ga.l = +new Date;
   ga('create', 'UA-XXXXX-Y', 'auto'); ga('set','transport','beacon'); ga('send', 'pageview')

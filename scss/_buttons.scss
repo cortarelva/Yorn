@@ -9,7 +9,6 @@
     color:white;
     font-weight:600;
     cursor:pointer;
-    //display:none;
 }
 
 .btn-small{
@@ -23,6 +22,20 @@
     top:50px;
     text-decoration:none;
 }
+
+.btn-aderir{
+    width: 775px;
+    height: 51px;  
+    background: #D81B60;
+    font-family:$copy-font;
+    font-size: 18px;
+    font-weight:600;
+    color:white;
+    border:none;
+    margin:20px auto;
+    cursor:pointer;
+}
+
 
 
 
