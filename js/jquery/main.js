@@ -1,4 +1,4 @@
-
+// slick js
  $(document).ready(function(){
     $('.slick-card-container').slick({
       arrows:false,
@@ -9,3 +9,11 @@
           
     });
   });
+
+  //nav-menu js
+  $(document).ready(function(){
+    $('.menu').click(function(e){
+      e.preventDefault();
+      $('.openMenu').addClass('open');
+    })
+   })
