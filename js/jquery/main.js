@@ -10,10 +10,30 @@
     });
   });
 
-  //nav-menu js
-  $(document).ready(function(){
-    $('.menu').click(function(e){
-      e.preventDefault();
-      $('.openMenu').addClass('open');
-    })
-   })
+
+   //mobile nav js
+
+   $(document).ready(function(){
+    var counter = 0;
+    var x = $('#side-nav');
+    var disp = $('#menu-button')
+    
+    $('.menuButton').click(function(){
+      x.css('width', '100%');
+      disp.css('display','none');
+      counter = 1;
+    
+    if(counter == 1){
+      $('a').click(function(){
+        x.css('width', '0px');
+        disp.css('display','block');
+        counter = 0;
+        });     
+       }
+       x.on('mouseleave',function(){
+       x.css('width','0px'); 
+       disp.css('display','block');
+       counter = 0;
+      });
+    });
+  })
