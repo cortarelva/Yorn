@@ -267,10 +267,10 @@
 }
 
 /* Portrait tablet to landscape and desktop */
-@media (min-width: 768px) and (max-width:1199px) {
+@media (min-width: 768px) and (max-width:1024px) {
     body .hero-image{
-        background-image:url("../images/desktop/hero-image.jpg");
-        width:100%;
+        background-image:url("../images/mobile/mobile_hero.jpg");
+       // width:100%;
       /*  &:before{
             content:'';
             width:100%;
@@ -301,7 +301,7 @@
          .apple-info{
             padding:15px 55px;
             font-size:20px;
-        }   
+            }   
         }
     } 
    /* .bottom-arrow-container{
