@@ -1,21 +1,4 @@
-.bg-aderir{
-    background-image: url('../images/desktop/desktop_background_aderir.jpg');
-    width:100%;
-    height:1199px;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    font-family:$copy-font;
-    text-align:center;
-    
-    .bg-head{
-       position: relative;
-       top:40px;
-       margin:10px auto;
-       text-transform:uppercase;
-       font-size: 50px;
-       font-weight:800;
-       color:white;
-       letter-spacing: 2px;
-    }
-}
+@include tarifario-adesao-bg;
+
+
+

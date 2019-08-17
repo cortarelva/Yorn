@@ -15,7 +15,6 @@
         z-index:2;
         text-align:left;
         h1{
-            //border:1px solid;
             font-family: $primary-font;
             background-color:transparent;
             color:white;
@@ -27,10 +26,8 @@
         .font-color{
             color:#d81b60;
         }
-        .apple-subscribe{
-            //border:1px solid;          
+        .apple-subscribe{          
            p{
-               //border:1px solid;
                 margin:30px auto;
                 font-family: $copy-font;
                 font-style: normal;
@@ -97,17 +94,6 @@
         background-image:url("../images/mobile/mobile_hero.jpg");       
         width:100%;
         height:100%;
-       /* &:before{
-            content:'';
-            width:100%;
-            height:100%;
-            background-color:rgba(0,0,0,0.3);
-            display: block;
-            position: absolute;
-            left:0;
-            top:0;
-            z-index:1;
-          }*/
         .hero-text{
             top:30%;      
             h1{
@@ -129,9 +115,8 @@
          .apple-info{
             padding:10px 35px;
             font-size:15px;
-        }    
-        }
-        
+            }    
+        } 
     } 
 }
 
@@ -143,17 +128,6 @@
         background-image:url("../images/mobile/mobile_hero.jpg");
         width:100%;
         height:100%;
-      /*  &:before{
-            content:'';
-            width:100%;
-            height:100%;
-            background-color:rgba(0,0,0,0.3);
-            display: block;
-            position: absolute;
-            left:0;
-            top:0;
-            z-index:1;
-          }*/
         .hero-text{
             top:30%;      
             h1{
@@ -187,17 +161,6 @@
         background-image:url("../images/mobile/mobile_hero.jpg");
         width:100%;
         height:100%;
-      /*  &:before{
-            content:'';
-            width:100%;
-            height:100%;
-            background-color:rgba(0,0,0,0.3);
-            display: block;
-            position: absolute;
-            left:0;
-            top:0;
-            z-index:1;
-          }*/
         .hero-text{
             top:25%;      
             h1{
@@ -228,17 +191,6 @@
     body .hero-image{
         background-image:url("../images/mobile/mobile_hero.jpg");
         width:100%;
-      /*  &:before{
-            content:'';
-            width:100%;
-            height:100%;
-            background-color:rgba(0,0,0,0.3);
-            display: block;
-            position: absolute;
-            left:0;
-            top:0;
-            z-index:1;
-          }*/
         .hero-text{
             top:40%;          
             h1{
@@ -258,30 +210,15 @@
          .apple-info{
             padding:10px 45px;
             font-size:15px;
-        }   
+            }   
         }
     } 
-    /*.bottom-arrow-container{
-        top:530px;
-    }*/
 }
 
 /* Portrait tablet to landscape and desktop */
 @media (min-width: 768px) and (max-width:1024px) {
     body .hero-image{
         background-image:url("../images/mobile/mobile_hero.jpg");
-       // width:100%;
-      /*  &:before{
-            content:'';
-            width:100%;
-            height:100%;
-            background-color:rgba(0,0,0,0.3);
-            display: block;
-            position: absolute;
-            left:0;
-            top:0;
-            z-index:1;
-          }*/
         .hero-text{
             top:40%;          
             h1{
@@ -304,10 +241,6 @@
             }   
         }
     } 
-   /* .bottom-arrow-container{
-        position:absolute;
-        bottom:8px;
-    }*/
 }
 
 

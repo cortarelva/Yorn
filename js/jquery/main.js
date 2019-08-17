@@ -41,5 +41,13 @@
 
 
   $(document).ready(function(){
-    
-  });
+
+    $('.form-submit').attr('disabled','disabled');
+
+    $('.num-input').keyup(function (){
+     if('.num-input' !== '') {
+       $('.form-submit').removeAttr('disabled').css('background','#D81B60');
+     }
+    }
+  );
+});
