@@ -3,7 +3,7 @@
 
 <head>
   <meta charset="utf-8">
-  <title></title>
+  <title>Yorn Home</title>
   <meta name="description" content="">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -13,7 +13,6 @@
 
   
   <link rel="stylesheet" href="../css/main.css">
-  <!--<link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">-->
   <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
   <!--fonts stylesheets-->
   <link rel="stylesheet" href="../fonts/appopaint-regular.css">
@@ -45,7 +44,7 @@
         <li class="nav-items"><a href="my-yorn.html">My Yorn</a></li>
     </ul>
     </div>
-    <div class="search"><img class="search-icon" href="#" src="../images/desktop/desktop_menu_search.png"></div>
+    <div class="search"><img id="search-btn" class="search-icon" href="#" src="../images/desktop/desktop_menu_search.png"></div>
     <div class="nav-links-container">
     <ul class="nav-links-list">
         <li class="nav-links" href="#"><img src="../images/desktop/desktop_menu_instagram.png"></li>
@@ -53,6 +52,12 @@
         <li class="nav-links" href="#"><img src="../images/desktop/desktop_menu_youtube.png"></li>
     </ul>
     </div>
+    <form class="modal-search-container">
+      <input class="modal-search-input">
+      <div class="modal-search-btn"><a>Search</a></div>
+    </form>
+    
+    
     <a class="btn-aderir-desktop" href="adesao-tarifarios.html">
         <p>Aderir</p>
     </a>
@@ -344,9 +349,7 @@
   <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
   <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
   
-<!--
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.bundle.min.js"></script>-->
+
 <script>
   window.ga = function () { ga.q.push(arguments) }; ga.q = []; ga.l = +new Date;
   ga('create', 'UA-XXXXX-Y', 'auto'); ga('set','transport','beacon'); ga('send', 'pageview')

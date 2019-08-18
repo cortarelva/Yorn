@@ -39,7 +39,7 @@
   })
 
 
-
+//js to enable submit button in tarifarios page
   $(document).ready(function(){
 
     $('.form-submit').attr('disabled','disabled');
@@ -50,4 +50,15 @@
      }
     }
   );
+});
+
+
+
+
+
+//js to open modal search window(not finished)
+$document.ready(function(){
+	$('#search-btn').on ('click', () =>{
+		$('.modal-search-container').css('display','flex');
+	});
 });
