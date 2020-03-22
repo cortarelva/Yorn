@@ -1,6 +1,6 @@
 .btn-aderir-homepage{
     margin: 0 auto;
-    padding:25px 126px; 
+    padding:25px 169px ; 
     background-color:#d81b60;
     font-family:$copy-font;
     font-size:24px;
@@ -8,6 +8,7 @@
     font-weight:600;
     text-decoration:none;
     cursor:pointer;
+    transition: background-image 1s;
 }
 
 .btn-small{
@@ -35,7 +36,14 @@
     cursor:pointer;
 }
 
-
+.btn-aderir:hover{
+    background-color: white;
+    color:#d81b60;
+}
+.btn-aderir-homepage:hover{
+    background-image: linear-gradient( rgb(202, 56, 221), rgb(62, 89, 212));
+    color:white;
+}
 
 
 //iphone 5/5S
