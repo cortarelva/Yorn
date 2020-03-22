@@ -65,7 +65,10 @@
     }
 }
 
-
+.btn-aderir-desktop:hover{
+    background-image: linear-gradient( rgb(202, 56, 221), rgb(62, 89, 212));
+    color:white;
+}
 
 
 
@@ -97,6 +100,7 @@
         transition:0.3s;
         color:#3F51B5;
         font-size:45px; 
+        cursor:pointer;
     }
 
     .search-icon{
