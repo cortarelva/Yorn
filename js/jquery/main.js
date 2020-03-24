@@ -11,7 +11,30 @@
   });
 
 
-   //mobile nav js
+
+//mobile nav
+//vanila js version
+//selectors
+const menubtn = document.querySelector("#menu-button");
+const sidenav = document.querySelector("#side-nav");
+const closebtn =document.querySelector("#close-btn");
+
+//events
+menubtn.addEventListener("click", openNav);
+closebtn.addEventListener("click", closeNav);
+
+//functions
+function openNav(){
+   sidenav.style.width = "100%";
+}
+
+function closeNav(){
+  sidenav.style.width = "0%";
+}
+
+
+/*
+   //mobile nav jquery version
 
    $(document).ready(function(){
     var counter = 0;
@@ -23,13 +46,14 @@
       disp.css('display','none');
       counter = 1;
     
-    if(counter == 1){
-      $('a').click(function(){
+    if(counter === 1){
+      $('.sidenav-link').click(function(){
         x.css('width', '0px');
         disp.css('display','block');
         counter = 0;
         });     
        }
+       
        x.on('mouseleave',function(){
        x.css('width','0px'); 
        disp.css('display','block');
@@ -37,7 +61,7 @@
       });
     });
   })
-
+*/
 
 //js to enable submit button in tarifarios page
   $(document).ready(function(){
@@ -54,7 +78,7 @@
 
 
 
-
+/*
 
 //js to open modal search window(not finished)
 $document.ready(function(){
@@ -62,3 +86,5 @@ $document.ready(function(){
 		$('.modal-search-container').css('display','flex');
 	});
 });
+
+*/
