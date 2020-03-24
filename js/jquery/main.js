@@ -5,8 +5,7 @@
       centerMode:true,
       centerPadding: '40px',
       slidesToShow:1,
-      focusOnSelect:false,
-          
+      focusOnSelect:false,    
     });
   });
 
